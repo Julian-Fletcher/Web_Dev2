@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+
+<ul>
+    <% movies.forEach(movie => { %>
+        <li>
+            <h3>
+                <%= movie.name %>
+            </h3>
+            <p> 
+                <%= movie.desc %>
+            </p>
+            <p>
+                <%= movie.stars %>
+            </p>
+        </li>
+    <% }) %>
+</ul>
